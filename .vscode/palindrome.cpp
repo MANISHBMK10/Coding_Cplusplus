@@ -10,7 +10,7 @@ bool palindrome(string k){
     return rev == k;
     }
 
-int main()
+int main1()
 {
     string s;
     cout << "Enter the string:";

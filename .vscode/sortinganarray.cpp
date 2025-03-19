@@ -4,15 +4,14 @@
 using namespace std;
 
 void swap(int& a, int& b){
-    int c;
-    c = a;
+    int c = a;
     a = b;
     b = c;
 }
 
 void bubblesort(int a[], int n){
 for(int i = 0; i<n; i++){
-    for(int j = i; j<n;j++){
+    for(int j = 0; j<n-i-1;j++){
 
     if(a[j] >a[j+1]){
         swap(a[j], a[j+1]);
@@ -21,13 +20,13 @@ for(int i = 0; i<n; i++){
     int i = 0;
     while(i != n)
     {
-        cout << a[i];
+        cout << a[i] << endl;
         i++;
 }  
 }
 
 
-int main(){
+int main2(){
     int n;
     cout << "Enter number of elements:" << endl;
     cin >> n;
@@ -38,5 +37,4 @@ int main(){
     }
     bubblesort(arr, n);
     delete[] arr;
-    return 0;
-}
+    return 0;}
